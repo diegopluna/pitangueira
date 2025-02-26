@@ -13,11 +13,11 @@ def main():
     st.sidebar.title("Navegação")
     page = st.sidebar.radio(
         "Selecione uma página:",
-        ["Início", "Transações Pagas"],  # Add the new page option
+        ["Início", "Compras não entregues"],  # Add the new page option
         index=0
     )
 
-    if page == "Transações Pagas":
+    if page == "Compras não entregues":
         paid_transactions.show()
     elif page == "Início":
         home.show()

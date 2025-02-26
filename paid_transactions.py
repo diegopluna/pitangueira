@@ -2,7 +2,7 @@ import streamlit as st
 from db import query_database_to_dataframe
 
 def show():
-    st.title("Transações Pagas")
+    st.title("Compras não entregues")
     st.write("Esta página exibe todas as transações com status PAGO.")
 
     with st.spinner('Carregando dados...'):
